@@ -99,12 +99,23 @@
             app:layout_constraintGuide_begin="460dp" />
 
         <include
+            android:id="@+id/include_spesification"
             layout="@layout/layout_spesification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <include
+            android:id="@+id/include_seller"
+            layout="@layout/layout_seller"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guideline" />
+            app:layout_constraintTop_toBottomOf="@id/include_spesification" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
